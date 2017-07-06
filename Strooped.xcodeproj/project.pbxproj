@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE53179E1F0D57FF0023C8F1 /* TileGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53179D1F0D57FF0023C8F1 /* TileGrid.swift */; };
+		DE5317A01F0D8A970023C8F1 /* Ge_Body.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE53179F1F0D8A970023C8F1 /* Ge_Body.ttf */; };
 		DED2C2DB1F0B05DB00439829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2C2DA1F0B05DB00439829 /* AppDelegate.swift */; };
 		DED2C2DD1F0B05DB00439829 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DED2C2DC1F0B05DB00439829 /* GameScene.sks */; };
 		DED2C2DF1F0B05DB00439829 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DED2C2DE1F0B05DB00439829 /* Actions.sks */; };
@@ -15,9 +17,12 @@
 		DED2C2E61F0B05DB00439829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED2C2E41F0B05DB00439829 /* Main.storyboard */; };
 		DED2C2E81F0B05DB00439829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED2C2E71F0B05DB00439829 /* Assets.xcassets */; };
 		DED2C2EB1F0B05DB00439829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED2C2E91F0B05DB00439829 /* LaunchScreen.storyboard */; };
+		DEE5C4B61F0D551C0027BE21 /* ColorTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5C4B51F0D551C0027BE21 /* ColorTile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE53179D1F0D57FF0023C8F1 /* TileGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileGrid.swift; sourceTree = "<group>"; };
+		DE53179F1F0D8A970023C8F1 /* Ge_Body.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ge_Body.ttf; sourceTree = "<group>"; };
 		DED2C2D71F0B05DB00439829 /* Strooped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strooped.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED2C2DA1F0B05DB00439829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DED2C2DC1F0B05DB00439829 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		DED2C2E71F0B05DB00439829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED2C2EA1F0B05DB00439829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DED2C2EC1F0B05DB00439829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE5C4B51F0D551C0027BE21 /* ColorTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +68,15 @@
 			children = (
 				DED2C2DA1F0B05DB00439829 /* AppDelegate.swift */,
 				DED2C2DC1F0B05DB00439829 /* GameScene.sks */,
+				DEE5C4B51F0D551C0027BE21 /* ColorTile.swift */,
+				DE53179D1F0D57FF0023C8F1 /* TileGrid.swift */,
 				DED2C2DE1F0B05DB00439829 /* Actions.sks */,
 				DED2C2E01F0B05DB00439829 /* GameScene.swift */,
 				DED2C2E21F0B05DB00439829 /* GameViewController.swift */,
 				DED2C2E41F0B05DB00439829 /* Main.storyboard */,
 				DED2C2E71F0B05DB00439829 /* Assets.xcassets */,
 				DED2C2E91F0B05DB00439829 /* LaunchScreen.storyboard */,
+				DE53179F1F0D8A970023C8F1 /* Ge_Body.ttf */,
 				DED2C2EC1F0B05DB00439829 /* Info.plist */,
 			);
 			path = Strooped;
@@ -134,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED2C2E61F0B05DB00439829 /* Main.storyboard in Resources */,
+				DE5317A01F0D8A970023C8F1 /* Ge_Body.ttf in Resources */,
 				DED2C2DD1F0B05DB00439829 /* GameScene.sks in Resources */,
 				DED2C2E81F0B05DB00439829 /* Assets.xcassets in Resources */,
 				DED2C2EB1F0B05DB00439829 /* LaunchScreen.storyboard in Resources */,
@@ -149,8 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED2C2E11F0B05DB00439829 /* GameScene.swift in Sources */,
+				DE53179E1F0D57FF0023C8F1 /* TileGrid.swift in Sources */,
 				DED2C2E31F0B05DB00439829 /* GameViewController.swift in Sources */,
 				DED2C2DB1F0B05DB00439829 /* AppDelegate.swift in Sources */,
+				DEE5C4B61F0D551C0027BE21 /* ColorTile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C79RLRW3DJ;
 				INFOPLIST_FILE = Strooped/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WesO.Strooped;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C79RLRW3DJ;
 				INFOPLIST_FILE = Strooped/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WesO.Strooped;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +328,7 @@
 				DED2C2F11F0B05DB00439829 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
