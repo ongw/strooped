@@ -170,6 +170,20 @@ class TileGrid: SKSpriteNode {
         }
     }
     
+    func getTileNodes() -> [SKNode] {
+    var tileNodes = [SKNode]()
+    
+        /* Loop through all nodes  */
+        for node in self.children {
+            let tile = node as! ColorTile
+            if !tile.isMain {
+            tileNodes.append(node)
+            }
+        }
+        
+        return tileNodes
+    }
+    
     /* You are required to implement this for your subclass to work */
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

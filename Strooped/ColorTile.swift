@@ -40,18 +40,18 @@ class ColorTile: SKSpriteNode {
         /* Initialize tile texture and label */
         var texture: SKTexture
         
-        /* Check if tile is main tile */
+        /* Check if tile is main tile and set texture respectively */
         if isMain {
-            texture = SKTexture(imageNamed: "mainTile2-1")
+            texture = SKTexture(imageNamed: "mainTile")
             frontLabel.fontSize = 22
         }
         else {
-            texture = SKTexture(imageNamed: "commonTile3")
+            texture = SKTexture(imageNamed: "commonTile")
             frontLabel.fontSize = 22
         }
         
         /* Label font formatting */
-        frontLabel.zPosition = 1
+        frontLabel.zPosition = 3
         frontLabel.verticalAlignmentMode = SKLabelVerticalAlignmentMode.center
         frontLabel.fontName = "Ge Body"
 
@@ -91,11 +91,11 @@ class ColorTile: SKSpriteNode {
         
         /* Check if tile is main tile */
         if isMain {
-            texture = SKTexture(imageNamed: "mainTile2-1")
+            texture = SKTexture(imageNamed: "mainTile")
             frontLabel.fontSize = 22
         }
         else {
-            texture = SKTexture(imageNamed: "commonTile3")
+            texture = SKTexture(imageNamed: "commonTile")
             frontLabel.fontSize = 22
         }
         

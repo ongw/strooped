@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE06DBEA1F1032B500A18199 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06DBE91F1032B500A18199 /* MSButtonNode.swift */; };
 		DE53179E1F0D57FF0023C8F1 /* TileGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53179D1F0D57FF0023C8F1 /* TileGrid.swift */; };
 		DE5317A01F0D8A970023C8F1 /* Ge_Body.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE53179F1F0D8A970023C8F1 /* Ge_Body.ttf */; };
 		DED2C2DB1F0B05DB00439829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2C2DA1F0B05DB00439829 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE06DBE91F1032B500A18199 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
 		DE53179D1F0D57FF0023C8F1 /* TileGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileGrid.swift; sourceTree = "<group>"; };
 		DE53179F1F0D8A970023C8F1 /* Ge_Body.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ge_Body.ttf; sourceTree = "<group>"; };
 		DED2C2D71F0B05DB00439829 /* Strooped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strooped.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,7 @@
 				DEE5C4B51F0D551C0027BE21 /* ColorTile.swift */,
 				DE53179D1F0D57FF0023C8F1 /* TileGrid.swift */,
 				DED2C2DE1F0B05DB00439829 /* Actions.sks */,
+				DE06DBE91F1032B500A18199 /* MSButtonNode.swift */,
 				DED2C2E01F0B05DB00439829 /* GameScene.swift */,
 				DED2C2E21F0B05DB00439829 /* GameViewController.swift */,
 				DED2C2E41F0B05DB00439829 /* Main.storyboard */,
@@ -161,6 +164,7 @@
 				DED2C2E11F0B05DB00439829 /* GameScene.swift in Sources */,
 				DE53179E1F0D57FF0023C8F1 /* TileGrid.swift in Sources */,
 				DED2C2E31F0B05DB00439829 /* GameViewController.swift in Sources */,
+				DE06DBEA1F1032B500A18199 /* MSButtonNode.swift in Sources */,
 				DED2C2DB1F0B05DB00439829 /* AppDelegate.swift in Sources */,
 				DEE5C4B61F0D551C0027BE21 /* ColorTile.swift in Sources */,
 			);
