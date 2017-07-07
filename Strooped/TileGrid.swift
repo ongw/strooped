@@ -43,6 +43,7 @@ class TileGrid: SKSpriteNode {
     
     /* Array of colors for various function usage */
     static var color: [Color] = [.null, .red, .null, .blue, .green, .null, .yellow, .null]
+    //static var color: [Color] = [.pink, .red, .orange, .blue, .green, .black, .yellow, .purple]
     
     init() {
         /* Populate the grid with tiles */
@@ -75,7 +76,7 @@ class TileGrid: SKSpriteNode {
                 }
                 
                 /* Set tile position */
-                newTile.position = CGPoint(x: Double(gridX*90) + 12.5*Double(gridX + 1) + 45, y: Double(gridY*90) + 12.5*Double(gridY + 1) + 95)
+                newTile.position = CGPoint(x: Double(gridX*90) + 12.5*Double(gridX + 1) + 45, y: Double(gridY*90) + 12.5*Double(gridY + 1) + 125)
                 
                 /* Add new tile as child node*/
                 addChild(newTile)
@@ -106,7 +107,7 @@ class TileGrid: SKSpriteNode {
         /* Check if tapped node matches text color of main node */
         if ColorTile.selectedColor != .null {
             if ColorTile.selectedColor == mainTile.textColor {
-                GameScene.gameState = .ready
+                GameScene.gameState = .playing
             }
             else {
                 GameScene.gameState = .gameOver
@@ -130,6 +131,7 @@ class TileGrid: SKSpriteNode {
     }
     
     func randomizeNormalTiles() {
+        
         /* Shuffle colors */
         TileGrid.color.shuffle()
         
@@ -138,6 +140,30 @@ class TileGrid: SKSpriteNode {
             for y in 0..<3 {
                if tileArray[x][y] != mainTile {
                     tileArray[x][y].setValue(textColor: .black, textValue: TileGrid.color[colorCount])
+                    colorCount += 1
+                }
+            }
+        }
+    }
+    
+ func randomizeNormalTiles2() {
+        var mainTileColorArray = [Color]()
+        
+        /* Get all current non-null colors */
+        for color in TileGrid.color {
+            if color != .null {
+                mainTileColorArray.append(color)
+            }
+        }
+        
+        /* Shuffle colors */
+        TileGrid.color.shuffle()
+        
+        var colorCount = 0
+        for x in 0..<3 {
+            for y in 0..<3 {
+                if tileArray[x][y] != mainTile {
+                    tileArray[x][y].setValue(textColor: mainTileColorArray[Int(arc4random_uniform(UInt32(mainTileColorArray.count)))], textValue: TileGrid.color[colorCount])
                     colorCount += 1
                 }
             }
