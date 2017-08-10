@@ -22,6 +22,8 @@ enum Color: String {
     null = ""
 }
 
+// class Specimen 
+
 class ColorTile: SKSpriteNode {
     
     var textColor: Color!
@@ -115,19 +117,19 @@ class ColorTile: SKSpriteNode {
         case .red:
             return UIColor.red
         case .blue:
-            return UIColor.blue
+            return UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
         case .green:
             return UIColor(red: 0.153, green: 0.427, blue: 0.212, alpha: 1)
         case .black:
             return UIColor.black
         case .pink:
-            return UIColor(red: 0.9137, green: 0.5686, blue: 0.7412, alpha: 1)
+             return UIColor(red: 1, green: 0.176, blue: 0.745, alpha: 1)
         case .orange:
-            return UIColor.orange
+            return UIColor(red: 1, green: 0.471, blue: 0, alpha: 1)
         case .purple:
-            return UIColor.purple
+            return UIColor(red: 0.471, green: 0.318, blue: 0.663, alpha: 1)
         case .yellow:
-            return UIColor(red: 0.922, green: 0.847, blue: 0.208, alpha: 1)
+            return UIColor(red: 1, green: 0.80, blue: 0, alpha: 1)
         default:
             return UIColor.cyan
         }
